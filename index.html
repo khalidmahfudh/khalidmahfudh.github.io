@@ -1,214 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<!-- Required meta tags -->
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&family=Poppins:wght@200;400&family=Raleway:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Khalid Portfolio</title>
+    
+</head>
+<body>
+    <!-- START NAV -->
+    <nav id="navbar" class="nav">
+        <!-- Logo -->
+        <div class="logo">
+            <h4>Khalid Mahfudh Al Azizi</h4>
+        </div>
 
-		<!-- Bootstrap CSS -->
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+        <!-- Menu -->
+        <ul class="nav-list">
+            <li>
+                <a href="#home-section">Home</a>
+            </li>
+            <li>
+                <a href="#about-section">About</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
 
-		<!-- Bootstrap Icons -->
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+        <!-- burger menu -->
+        <div class="menu-toggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
 
-		<!-- Style.css -->
-		<link rel="stylesheet" href="style.css" />
+    </nav>
+    <!-- END NAV -->
+    <!-- START HOME SECTION -->
+    <section class="home-section" id="home-section">
+        <img src="./img/poto.png" alt="poto" class="poto">
+        <h1>Khalid Mahfudh Al Azizi</h1>
+        <p>Web Developer</p>
+    </section>
+    <!-- END HOME SECTION -->
 
-		<title>My Portofolio | Khalid Mahfudh Al Azizi</title>
-	</head>
-	<body>
-		<!-- Navbar -->
-		<nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top" style="background-color: #003638">
-			<div class="container">
-				<a class="navbar-brand text-light" href="#home"><img src="img/logo.png" alt="logo" height="40"></a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-					<div class="navbar-nav ms-auto">
-						<a class="nav-link active" aria-current="page" href="#home">Home</a>
-						<a class="nav-link" href="#about">About</a>
-						<a class="nav-link" href="#projects">Projects</a>
-						<a class="nav-link" href="#contact">Contact</a>
-					</div>
-				</div>
-			</div>
-		</nav>
-		<!-- Navbar End -->
+    <!-- START ABOUT SECTION -->
+    <section class="about-section" id="about-section">
+        <h2 class="about-section-header">About Me</h2>
+        <p>Lulusan Universitas Samudra Langsa Aceh jurusan Teknik Informatika. Memiliki kemampuan yang sangat baik dalam Web Development. Sedang mencari pekerjaan untuk menjadi seorang Web Developer.</p>
+    </section>
+    <!-- END ABOUT SECTION -->
 
-		<!-- Jumbotron -->
-		<section id="home" class="jumbotron text-center">
-			<img src="img/khalid.jpg" alt="khalid" class="rounded-circle img-thumbnail shadow" width="200" />
-			<h1 class="display-4">Khalid Mahfudh Al Azizi</h1>
-			<p class="lead p-jumbo">Programmer | Writer | Businessman</p>
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-				<path fill="#F3F2C9" fill-opacity="1" d="M0,192L120,202.7C240,213,480,235,720,218.7C960,203,1200,149,1320,122.7L1440,96L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
-			</svg>
-		</section>
-		<!-- Jumbotron End -->
+    <!-- START PROJECTS SECTION -->
+    <section class="projects-section" id="projects">
+        <h2 class="projects-section-header">My Projects</h2>
+        <div class="projects-grid">
+            
+            <a href="#" target="_blank" class="project project-tile"><img src="./img/projects/project-1.png" alt="project">
+            <p class="project-title">
+                <span class="code">&#60;</span>
+                Sistem Penjadwalan Perkuliahan Algoritma Genetika
+                <span class="code">&#8725;&#62;</span>
+            </p>
+            </a>
 
-		<!-- About -->
-		<section id="about" style="background-color: #f3f2c9">
-			<div class="container">
-				<div class="row text-center mb-3">
-					<div class="col">
-						<h2>About Me</h2>
-					</div>
-				</div>
-				<div class="row justify-content-center fs-5 text-center">
-					<div class="col-md-4">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero corporis reiciendis, quo porro illo pariatur! Minima, libero dolores eius voluptatum magnam qui molestiae explicabo commodi deserunt recusandae ad, ut modi.</p>
-					</div>
-					<div class="col-md-4">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero corporis reiciendis, quo porro illo pariatur! Minima, libero dolores eius voluptatum magnam qui molestiae explicabo commodi deserunt recusandae ad, ut modi.</p>
-					</div>
-				</div>
-			</div>
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-				<path
-					fill="#53B8BB"
-					fill-opacity="1"
-					d="M0,128L80,149.3C160,171,320,213,480,208C640,203,800,149,960,160C1120,171,1280,245,1360,282.7L1440,320L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
-				></path>
-			</svg>
-		</section>
-		<!-- About End -->
+            <a href="#" target="_blank" class="project project-tile"><img src="./img/projects/project-2.png" alt="project">
+                <p class="project-title">
+                    <span class="code">&#60;</span>
+                    Sistem Pakar Penentuan Gangguan Layanan Indihome Algoritma Best First Search
+                    <span class="code">&#8725;&#62;</span>
+                </p>
+            </a>
+                
+            <a href="#" target="_blank" class="project project-tile"><img src="./img/projects/project-3.png" alt="project">
+                <p class="project-title">
+                    <span class="code">&#60;</span>
+                    Sistem Pendukung Keputusan Mahasiswa Terbaik Algoritma AHP dan TOPSIS
+                    <span class="code">&#8725;&#62;</span>
+                </p>
+                </a>
+    
+                <a href="#" target="_blank" class="project project-tile"><img src="./img/projects/project-4.png" alt="project">
+                    <p class="project-title">
+                        <span class="code">&#60;</span>
+                        Sistem Penentuan Penilaian Kinerja Pegawai PLN Algoritma SAW dan MFEP
+                        <span class="code">&#8725;&#62;</span>
+                    </p>
+                </a>
+                <a href="#" target="_blank" class="project project-tile"><img src="./img/projects/project-5.png" alt="project">
+                    <p class="project-title">
+                        <span class="code">&#60;</span>
+                        Sistem Pelaporan Data Tahunan Dinas Pertanian, Perkebunan dan Peternakan
+                        <span class="code">&#8725;&#62;</span>
+                    </p>
+                    </a>
+        
+                    <a href="#" target="_blank" class="project project-tile"><img src="./img/projects/project-1.png" alt="project">
+                        <p class="project-title">
+                            <span class="code">&#60;</span>
+                            Contact App Sederhana
+                            <span class="code">&#8725;&#62;</span>
+                        </p>
+                    </a>
+        </div>
 
-		<!-- Projects -->
-		<section id="projects" style="background-color: #53b8bb">
-			<div class="container">
-				<div class="row text-center mb-3">
-					<div class="col">
-						<h2>My Projects</h2>
-					</div>
-				</div>
-				<div class="row justify-content-center">
-					<div class="col-md-4 mb-3">
-						<div class="card">
-							<img src="img/projects/1.jpg" class="card-img-top" alt="Project 1" />
-							<div class="card-body">
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 mb-3">
-						<div class="card">
-							<img src="img/projects/2.jpg" class="card-img-top" alt="Project 2" />
-							<div class="card-body">
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 mb-3">
-						<div class="card">
-							<img src="img/projects/3.jpg" class="card-img-top" alt="Project 3" />
-							<div class="card-body">
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 mb-3">
-						<div class="card">
-							<img src="img/projects/4.jpg" class="card-img-top" alt="Project 4" />
-							<div class="card-body">
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 mb-3">
-						<div class="card">
-							<img src="img/projects/5.jpg" class="card-img-top" alt="Project 5" />
-							<div class="card-body">
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-				<path fill="#F3F2C9" fill-opacity="1" d="M0,192L120,202.7C240,213,480,235,720,218.7C960,203,1200,149,1320,122.7L1440,96L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
-			</svg>
-		</section>
-		<!-- Projects End -->
+        <a href="#" target="_blank" class="btn btn-show-all">
+            Show all <i class="fas fa-chevron-right"></i>
+        </a>
 
-		<!-- Contact Me -->
-		<section id="contact" style="background-color: #f3f2c9" class="pb-5">
-			<div class="container">
-				<div class="row text-center mb-3">
-					<div class="col">
-						<h2>Contact Me</h2>
-					</div>
-				</div>
-				<div class="row justify-content-center">
-					<div class="col-md-8 mb-3">
-						<div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
-							<strong>Terima Kasih!</strong> Pesan Berhasil Dikirim.
-							<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-						  </div>
-						<form name='portofolio-contact-form'>
-							<div class="mb-3">
-								<label for="name" class="form-label">Nama Lengkap</label>
-								<input type="text" class="form-control" id="name" name="nama" aria-describedby="name" />
-							</div>
-							<div class="mb-3">
-								<label for="email" class="form-label">Email</label>
-								<input type="email" class="form-control" id="email" name="email" aria-describedby="email" />
-							</div>
-							<div class="mb-3">
-								<label for="pesan" class="form-label">Pesan</label>
-								<textarea class="form-control" id="pesan" name="pesan" rows="3"></textarea>
-							</div>
-							<button type="submit" class="btn text-light btn-kirim" style="background-color: #53b8bb">Kirim</button>
-							<button class="btn text-light btn-loading d-none" type="button" disabled style="background-color: #53b8bb">
-								<span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-								Kirim
-							</button>
-						</form>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Contact Me End -->
+    </section>
+    <!-- END PROJECTS SECTION -->
+    <!-- START CONTACT SECTION -->
+    <section id="contact" class="contact-section">
+        <div class="contact-section-header">
+            <h2>Contact Me</h2>
+        </div>
+        <div class="contact-section-form">
+            <form name="contact-form" class="contact-form" action="index.html" method="post">
+                <input name="nama" type="text" class="contact-form-text" placeholder="Nama Lengkap">
+                <input name="email" type="email" class="contact-form-text" placeholder="Email">
+                <textarea name="pesan" class="contact-form-text" placeholder="Pesan"></textarea>
+                <button type="submit" class="contact-form-btn btn-send">Send</button>
+                <button type="submit" class="contact-form-btn btn-loading d-none"><i class="fa fa-circle-notch fa-spin"></i> Send</button>
+            </form>
+          </div>
+    </section>
+    <!-- END CONTACT SECTION -->
+    <!-- START FOOTER SECTION -->
+    <footer>
+        <!-- Created with  by Khalid Mahfudh Al Azizi -->
+        <p>Created With <i class="fas fa-heart"></i> By Khalid Mahfudh Al Azizi</p>
+    </footer>
+    <!-- END FOOTER SECTION -->
 
-		<!-- Footer -->
-		<footer class="text-center pt-4 pb-2">
-			<p>
-				Created with <i class="bi bi-heart-fill text-danger"></i> by <a href="https://www.instagram.com/khalid_ibn_syams/">Khalid Mahfudh Al Azizi</a>
-			</p>
-		</footer>
-		<!-- Footer End -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
 
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+        const menuToggle = document.querySelector('.menu-toggle input');
+        const nav = document.querySelector('nav ul');
+        
+        menuToggle.addEventListener('click', function() {
+            nav.classList.toggle('slide');
+        });
 
-		<script>
-			const scriptURL = 'https://script.google.com/macros/s/AKfycbzJtaOFO0FYh8lSRWCqeHex-lfIH4vwFnpFZmFG1tyygIopHRzjbFTXQYaitmxvkpp2/exec'
-			const form = document.forms['portofolio-contact-form']
-			const btnKirim = document.querySelector('.btn-kirim')
-			const btnLoading = document.querySelector('.btn-loading')
-			const myAlert = document.querySelector('.my-alert')
-	
-			form.addEventListener('submit', e => {
-				e.preventDefault()
-				//   ketika klik tombol submit
-				// tampilkan tombol loading, hilangkan tombol kirim
-				btnLoading.classList.toggle('d-none')
-				btnKirim.classList.toggle('d-none')
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzlAVvMl3S_DpgfM_biItzbPNywKCRmLNPVpdMDQBBmlpzs-azy-z62L7IdEfd5P_V9Nw/exec'
+        const form = document.forms['contact-form']
+        const btnKirim = document.querySelector('.btn-send')
+        const btnLoading = document.querySelector('.btn-loading')
 
-				fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-				.then(response => {
-					// tampilkan tombol kirim, hilangkan tombol loading
-					btnLoading.classList.toggle('d-none')
-					btnKirim.classList.toggle('d-none')
 
-					// tampilkan alert
-					myAlert.classList.toggle('d-none')
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            // tampilkan tombol loading, hilangkan tombol kirim
+            btnLoading.classList.toggle('d-none');
+            btnKirim.classList.toggle('d-none');
 
-					// reset form
-					form.reset()
-					console.log('Success!', response)
-				})
-				.catch(error => console.error('Error!', error.message))
-			})
-		  </script>
-	</body>
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                // tampilkan tombol kirim, hilangkan tombol loading
+                btnLoading.classList.toggle('d-none');
+                btnKirim.classList.toggle('d-none');
+                // Tampilkan alert
+                Swal.fire(
+                    'Pesan Berhasil Dikirim!',
+                    'Harap Tunggu Balasan Via Email!',
+                    'success'
+                )
+                // reset form 
+                form.reset();
+                // console log sukses
+                console.log('Success!', response)
+            })
+                .catch(error => console.error('Error!', error.message))
+            })
+
+
+    </script>
+</body>
 </html>
